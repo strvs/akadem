@@ -1,4 +1,11 @@
-<svg data-name="Компонент 68 – 2" xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25">
-    <circle data-name="Эллипс 49" cx="12" cy="12" r="12" style="fill:#f78272"/>
-    <text transform="translate(4 6)" style="fill:#fff;font-size:14px;font-family:Gerbera-Light,Gerbera ☞;font-weight:300"><tspan x="6.32" y="15">i</tspan></text>
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_1556_2)">
+<path d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z" fill="#8DB17E"/>
+<path d="M11.482 10.112H12.518V17H11.482V10.112ZM11.412 8.418C11.2533 8.25933 11.174 8.06333 11.174 7.83C11.174 7.59667 11.2533 7.40067 11.412 7.242C11.5707 7.08333 11.7667 7.004 12 7.004C12.2333 7.004 12.4293 7.08333 12.588 7.242C12.7467 7.40067 12.826 7.59667 12.826 7.83C12.826 8.06333 12.7467 8.25933 12.588 8.418C12.4293 8.57667 12.2333 8.656 12 8.656C11.7667 8.656 11.5707 8.57667 11.412 8.418Z" fill="white"/>
+</g>
+<defs>
+<clipPath id="clip0_1556_2">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
 </svg>
