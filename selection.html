@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>АКАДЕМИЯ</title>
+
+        <link rel="stylesheet" href="css/fonts.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="js/slick/slick.css" />
+
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width">
+    </head>
+
+    <body>
+
+        <!-- wrapper -->
+        <div class="wrapper">
+
+            <header>
+                <div class="header-inner">
+                    <div class="container">
+                        <div class="logo"><a href="#"><svg><use xlink:href="images/sprite.svg#logo"></use></svg></a></div>
+                        <div class="title">Интеллигентный квартал</div>
+
+                        <a href="#" class="burger-link"><span></span></a>
+
+                        <a href="tel:+78412772727" class="header-phone">8 8412 77-27-27</a>
+
+                        <a href="#" class="header-select-link">Выбрать квартиру<svg><use xlink:href="images/sprite.svg#btn-arrow"></use></svg></a>
+                    </div>
+                </div>
+            </header>
+
+            <div class="burger-menu">
+                <div class="container">
+                    <div class="burger-menu-logo"><svg><use xlink:href="images/sprite.svg#logo"></use></svg></div>
+                    <div class="burger-menu-content">
+                        <a href="#" class="burger-menu-item"><span>Глава 1</span><strong>Ценность идеи</strong></a>
+                        <a href="#" class="burger-menu-item"><span>Глава 2</span><strong>Несложный выбор</strong></a>
+                        <a href="#" class="burger-menu-item"><span>Глава 3</span><strong>Для реализации в бизнесе</strong></a>
+                        <a href="#" class="burger-menu-item"><span>Глава 4</span><strong>События</strong></a>
+                        <a href="#" class="burger-menu-item"><span>Глава 5</span><strong>Вы по адресу</strong></a>
+                    </div>
+                    <a href="#" class="burger-menu-close">Свернуть<svg><use xlink:href="images/sprite.svg#btn-arrow"></use></svg></a>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="page-title">Несложный выбор</div>
+
+                <!-- selection -->
+                <div class="selection">
+                    <div class="selection-filter">
+                        <div class="selection-filter-mobile-close"><a href="#"><svg><use xlink:href="images/sprite.svg#btn-arrow"></use></svg>Назад</a></div>
+                        <div class="selection-title">Отсекая лишнее</div>
+                        <div class="selection-filter-container">
+                            <form action="ajax/selection-filter.html" method="post">
+                                <div class="selection-filter-group open">
+                                    <div class="selection-filter-group-title">Выберите дом</div>
+                                    <div class="selection-filter-group-container">
+                                        <div class="selection-filter-build">
+                                            <div class="selection-filter-build-street">2-й проезд Свердлова</div>
+                                            <label class="selection-filter-build-1"><input type="checkbox" name="build1"><span></span></label>
+                                            <label class="selection-filter-build-2"><input type="checkbox" name="build2"><span></span></label>
+                                            <label class="selection-filter-build-3"><input type="checkbox" name="build3"><span></span></label>
+                                            <label class="selection-filter-build-4"><input type="checkbox" name="build4"><span></span></label>
+                                            <label class="selection-filter-build-5"><input type="checkbox" name="build5"><span></span></label>
+                                            <div class="selection-filter-build-zoo">Зоопарк</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="selection-filter-group open">
+                                    <div class="selection-filter-group-title">Количество комнат</div>
+                                    <div class="selection-filter-group-container">
+                                        <div class="selection-filter-rooms">
+                                            <label><input type="checkbox" name="rooms1" checked="checked"><span>1</span></label>
+                                            <label><input type="checkbox" name="rooms2"><span>2</span></label>
+                                            <label><input type="checkbox" name="rooms3"><span>3</span></label>
+                                            <label><input type="checkbox" name="rooms4"><span>4</span></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="selection-filter-group open">
+                                    <div class="selection-filter-group-title">Площадь квартиры</div>
+                                    <div class="selection-filter-group-container">
+                                        <div class="selection-filter-size">
+                                            <label><input type="checkbox" name="size1" checked="checked"><span>40,2</span></label>
+                                            <label><input type="checkbox" name="size2"><span>90,12</span></label>
+                                            <label><input type="checkbox" name="size3"><span>100,12</span></label>
+                                            <label><input type="checkbox" name="size4"><span>140,40</span></label>
+                                            <label><input type="checkbox" name="size5"><span>170,5</span></label>
+                                            <label><input type="checkbox" name="size6"><span>200,5</span></label>
+                                            <label><input type="checkbox" name="size7" checked="checked"><span>240,56</span></label>
+                                            <label><input type="checkbox" name="size8"><span>260,20</span></label>
+                                        </div>
+                                        <div class="selection-filter-size-text">от <span class="selection-filter-size-text-from">40,2</span> м<sup>2</sup> до <span class="selection-filter-size-text-to">240,56</span> м<sup>2</sup></div>
+                                    </div>
+                                </div>
+                                <div class="selection-filter-group open">
+                                    <div class="selection-filter-group-title">Дополнительно</div>
+                                    <div class="selection-filter-group-container">
+                                        <div class="selection-filter-add">
+                                            <label><input type="checkbox" name="add1"><span>Балкон</span></label>
+                                            <label><input type="checkbox" name="add2"><span>Гардеробная</span></label>
+                                            <label><input type="checkbox" name="add3"><span>Мастерспальня</span></label>
+                                            <label><input type="checkbox" name="add4"><span>Уникальная квартира</span></label>
+                                            <label><input type="checkbox" name="add5"><span>Квартира с вторым светом</span></label>
+                                            <label><input type="checkbox" name="add6"><span>Терасса</span></label>
+                                            <label><input type="checkbox" name="add7"><span>Белая отделка</span></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="selection-filter-submit">
+                                    <button type="submit">Применить<svg><use xlink:href="images/sprite.svg#btn-arrow"></use></svg></button>
+                                </div>
+                                <div class="selection-filter-reset">
+                                    <button type="reset">Сбросить фильтр<svg><use xlink:href="images/sprite.svg#filter-reset"></use></svg></button>
+                                </div>
+                                <div class="form-loading">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <a href="#" class="selection-filter-mobile-link">Фильтр квартир<svg><use xlink:href="images/sprite.svg#btn-arrow"></use></svg></a>
+
+                    <!-- selection container -->
+                    <div class="selection-container">
+                        <div class="selection-title">Доступно 260 квартир</div>
+
+                        <!-- selection list -->
+                        <div class="selection-list">
+
+                            <!-- selection item -->
+                            <a href="#" class="selection-item">
+                                <div class="selection-item-scheme"><img src="files/select-item.svg" alt=""></div>
+                                <div class="selection-item-container">
+                                    <div class="selection-item-build">
+                                        <div class="selection-item-title">Дом</div>
+                                        <div class="selection-item-value">Строение-1</div>
+                                    </div>
+                                    <div class="selection-item-param">
+                                        <div class="selection-item-title">Секция</div>
+                                        <div class="selection-item-value">2</div>
+                                    </div>
+                                    <div class="selection-item-param">
+                                        <div class="selection-item-title">Квартира</div>
+                                        <div class="selection-item-value">6</div>
+                                    </div>
+                                    <div class="selection-item-param">
+                                        <div class="selection-item-title">Комнаты</div>
+                                        <div class="selection-item-value">4</div>
+                                    </div>
+                                    <div class="selection-item-size">
+                                        <div class="selection-item-title">Площадь</div>
+                                        <div class="selection-item-value">140 м<sup>2</sup></div>
+                                    </div>
+                                </div>
+                                <div class="selection-item-special">
+                                    Спецпредложение
+                                    <div class="selection-item-special-info">
+                                        <div class="selection-item-special-icon"><img src="images/selection-item-special.svg" alt=""></div>
+                                        <div class="selection-item-special-text">Подробность узнавайте у&nbsp;менеджеров</div>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- selection item END -->
+
+                            <!-- selection item -->
+                            <a href="#" class="selection-item">
+                                <div class="selection-item-scheme"><img src="files/select-item.svg" alt=""></div>
+                                <div class="selection-item-container">
+                                    <div class="selection-item-build">
+                                        <div class="selection-item-title">Дом</div>
+                                        <div class="selection-item-value">Строение-1</div>
+                                    </div>
+                                    <div class="selection-item-param">
+                                        <div class="selection-item-title">Секция</div>
+                                        <div class="selection-item-value">2</div>
+                                    </div>
+                                    <div class="selection-item-param">
+                                        <div class="selection-item-title">Квартира</div>
+                                        <div class="selection-item-value">6</div>
+                                    </div>
+                                    <div class="selection-item-param">
+                                        <div class="selection-item-title">Комнаты</div>
+                                        <div class="selection-item-value">4</div>
+                                    </div>
+                                    <div class="selection-item-size">
+                                        <div class="selection-item-title">Площадь</div>
+                                        <div class="selection-item-value">140 м<sup>2</sup></div>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- selection item END -->
+
+                            <!-- selection item -->
+                            <a href="#" class="selection-item">
+                                <div class="selection-item-scheme"><img src="files/select-item.svg" alt=""></div>
+                                <div class="selection-item-container">
+                                    <div class="selection-item-build">
+                                        <div class="selection-item-title">Дом</div>
+                                        <div class="selection-item-value">Строение-1</div>
+                                    </div>
+                                    <div class="selection-item-param">
+                                        <div class="selection-item-title">Секция</div>
+                                        <div class="selection-item-value">2</div>
+                                    </div>
+                                    <div class="selection-item-param">
+                                        <div class="selection-item-title">Квартира</div>
+                                        <div class="selection-item-value">6</div>
+                                    </div>
+                                    <div class="selection-item-param">
+                                        <div class="selection-item-title">Комнаты</div>
+                                        <div class="selection-item-value">4</div>
+                                    </div>
+                                    <div class="selection-item-size">
+                                        <div class="selection-item-title">Площадь</div>
+                                        <div class="selection-item-value">140 м<sup>2</sup></div>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- selection item END -->
+
+                            <!-- selection item -->
+                            <a href="#" class="selection-item">
+                                <div class="selection-item-scheme"><img src="files/select-item.svg" alt=""></div>
+                                <div class="selection-item-container">
+                                    <div class="selection-item-build">
+                                        <div class="selection-item-title">Дом</div>
+                                        <div class="selection-item-value">Строение-1</div>
+                                    </div>
+                                    <div class="selection-item-param">
+                                        <div class="selection-item-title">Секция</div>
+                                        <div class="selection-item-value">2</div>
+                                    </div>
+                                    <div class="selection-item-param">
+                                        <div class="selection-item-title">Квартира</div>
+                                        <div class="selection-item-value">6</div>
+                                    </div>
+                                    <div class="selection-item-param">
+                                        <div class="selection-item-title">Комнаты</div>
+                                        <div class="selection-item-value">4</div>
+                                    </div>
+                                    <div class="selection-item-size">
+                                        <div class="selection-item-title">Площадь</div>
+                                        <div class="selection-item-value">140 м<sup>2</sup></div>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- selection item END -->
+
+                            <!-- selection item -->
+                            <a href="#" class="selection-item">
+                                <div class="selection-item-scheme"><img src="files/select-item.svg" alt=""></div>
+                                <div class="selection-item-container">
+                                    <div class="selection-item-build">
+                                        <div class="selection-item-title">Дом</div>
+                                        <div class="selection-item-value">Строение-1</div>
+                                    </div>
+                                    <div class="selection-item-param">
+                                        <div class="selection-item-title">Секция</div>
+                                        <div class="selection-item-value">2</div>
+                                    </div>
+                                    <div class="selection-item-param">
+                                        <div class="selection-item-title">Квартира</div>
+                                        <div class="selection-item-value">6</div>
+                                    </div>
+                                    <div class="selection-item-param">
+                                        <div class="selection-item-title">Комнаты</div>
+                                        <div class="selection-item-value">4</div>
+                                    </div>
+                                    <div class="selection-item-size">
+                                        <div class="selection-item-title">Площадь</div>
+                                        <div class="selection-item-value">140 м<sup>2</sup></div>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- selection item END -->
+
+                            <!-- selection item -->
+                            <a href="#" class="selection-item">
+                                <div class="selection-item-scheme"><img src="files/select-item.svg" alt=""></div>
+                                <div class="selection-item-container">
+                                    <div class="selection-item-build">
+                                        <div class="selection-item-title">Дом</div>
+                                        <div class="selection-item-value">Строение-1</div>
+                                    </div>
+                                    <div class="selection-item-param">
+                                        <div class="selection-item-title">Секция</div>
+                                        <div class="selection-item-value">2</div>
+                                    </div>
+                                    <div class="selection-item-param">
+                                        <div class="selection-item-title">Квартира</div>
+                                        <div class="selection-item-value">6</div>
+                                    </div>
+                                    <div class="selection-item-param">
+                                        <div class="selection-item-title">Комнаты</div>
+                                        <div class="selection-item-value">4</div>
+                                    </div>
+                                    <div class="selection-item-size">
+                                        <div class="selection-item-title">Площадь</div>
+                                        <div class="selection-item-value">140 м<sup>2</sup></div>
+                                    </div>
+                                </div>
+                                <div class="selection-item-special last">
+                                    Последняя квартира
+                                    <div class="selection-item-special-info">
+                                        <div class="selection-item-special-icon"><img src="images/selection-item-last.svg" alt=""></div>
+                                        <div class="selection-item-special-text">Подробность узнавайте у&nbsp;менеджеров</div>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- selection item END -->
+
+                            <!-- selection item -->
+                            <a href="#" class="selection-item">
+                                <div class="selection-item-scheme"><img src="files/select-item.svg" alt=""></div>
+                                <div class="selection-item-container">
+                                    <div class="selection-item-build">
+                                        <div class="selection-item-title">Дом</div>
+                                        <div class="selection-item-value">Строение-1</div>
+                                    </div>
+                                    <div class="selection-item-param">
+                                        <div class="selection-item-title">Секция</div>
+                                        <div class="selection-item-value">2</div>
+                                    </div>
+                                    <div class="selection-item-param">
+                                        <div class="selection-item-title">Квартира</div>
+                                        <div class="selection-item-value">6</div>
+                                    </div>
+                                    <div class="selection-item-param">
+                                        <div class="selection-item-title">Комнаты</div>
+                                        <div class="selection-item-value">4</div>
+                                    </div>
+                                    <div class="selection-item-size">
+                                        <div class="selection-item-title">Площадь</div>
+                                        <div class="selection-item-value">140 м<sup>2</sup></div>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- selection item END -->
+
+                            <!-- selection item -->
+                            <a href="#" class="selection-item">
+                                <div class="selection-item-scheme"><img src="files/select-item.svg" alt=""></div>
+                                <div class="selection-item-container">
+                                    <div class="selection-item-build">
+                                        <div class="selection-item-title">Дом</div>
+                                        <div class="selection-item-value">Строение-1</div>
+                                    </div>
+                                    <div class="selection-item-param">
+                                        <div class="selection-item-title">Секция</div>
+                                        <div class="selection-item-value">2</div>
+                                    </div>
+                                    <div class="selection-item-param">
+                                        <div class="selection-item-title">Квартира</div>
+                                        <div class="selection-item-value">6</div>
+                                    </div>
+                                    <div class="selection-item-param">
+                                        <div class="selection-item-title">Комнаты</div>
+                                        <div class="selection-item-value">4</div>
+                                    </div>
+                                    <div class="selection-item-size">
+                                        <div class="selection-item-title">Площадь</div>
+                                        <div class="selection-item-value">140 м<sup>2</sup></div>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- selection item END -->
+
+                            <!-- selection item -->
+                            <a href="#" class="selection-item">
+                                <div class="selection-item-scheme"><img src="files/select-item.svg" alt=""></div>
+                                <div class="selection-item-container">
+                                    <div class="selection-item-build">
+                                        <div class="selection-item-title">Дом</div>
+                                        <div class="selection-item-value">Строение-1</div>
+                                    </div>
+                                    <div class="selection-item-param">
+                                        <div class="selection-item-title">Секция</div>
+                                        <div class="selection-item-value">2</div>
+                                    </div>
+                                    <div class="selection-item-param">
+                                        <div class="selection-item-title">Квартира</div>
+                                        <div class="selection-item-value">6</div>
+                                    </div>
+                                    <div class="selection-item-param">
+                                        <div class="selection-item-title">Комнаты</div>
+                                        <div class="selection-item-value">4</div>
+                                    </div>
+                                    <div class="selection-item-size">
+                                        <div class="selection-item-title">Площадь</div>
+                                        <div class="selection-item-value">140 м<sup>2</sup></div>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- selection item END -->
+
+                            <!-- selection item -->
+                            <a href="#" class="selection-item">
+                                <div class="selection-item-scheme"><img src="files/select-item.svg" alt=""></div>
+                                <div class="selection-item-container">
+                                    <div class="selection-item-build">
+                                        <div class="selection-item-title">Дом</div>
+                                        <div class="selection-item-value">Строение-1</div>
+                                    </div>
+                                    <div class="selection-item-param">
+                                        <div class="selection-item-title">Секция</div>
+                                        <div class="selection-item-value">2</div>
+                                    </div>
+                                    <div class="selection-item-param">
+                                        <div class="selection-item-title">Квартира</div>
+                                        <div class="selection-item-value">6</div>
+                                    </div>
+                                    <div class="selection-item-param">
+                                        <div class="selection-item-title">Комнаты</div>
+                                        <div class="selection-item-value">4</div>
+                                    </div>
+                                    <div class="selection-item-size">
+                                        <div class="selection-item-title">Площадь</div>
+                                        <div class="selection-item-value">140 м<sup>2</sup></div>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- selection item END -->
+
+                            <!-- selection item -->
+                            <a href="#" class="selection-item">
+                                <div class="selection-item-scheme"><img src="files/select-item.svg" alt=""></div>
+                                <div class="selection-item-container">
+                                    <div class="selection-item-build">
+                                        <div class="selection-item-title">Дом</div>
+                                        <div class="selection-item-value">Строение-1</div>
+                                    </div>
+                                    <div class="selection-item-param">
+                                        <div class="selection-item-title">Секция</div>
+                                        <div class="selection-item-value">2</div>
+                                    </div>
+                                    <div class="selection-item-param">
+                                        <div class="selection-item-title">Квартира</div>
+                                        <div class="selection-item-value">6</div>
+                                    </div>
+                                    <div class="selection-item-param">
+                                        <div class="selection-item-title">Комнаты</div>
+                                        <div class="selection-item-value">4</div>
+                                    </div>
+                                    <div class="selection-item-size">
+                                        <div class="selection-item-title">Площадь</div>
+                                        <div class="selection-item-value">140 м<sup>2</sup></div>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- selection item END -->
+
+                            <!-- selection item -->
+                            <a href="#" class="selection-item">
+                                <div class="selection-item-scheme"><img src="files/select-item.svg" alt=""></div>
+                                <div class="selection-item-container">
+                                    <div class="selection-item-build">
+                                        <div class="selection-item-title">Дом</div>
+                                        <div class="selection-item-value">Строение-1</div>
+                                    </div>
+                                    <div class="selection-item-param">
+                                        <div class="selection-item-title">Секция</div>
+                                        <div class="selection-item-value">2</div>
+                                    </div>
+                                    <div class="selection-item-param">
+                                        <div class="selection-item-title">Квартира</div>
+                                        <div class="selection-item-value">6</div>
+                                    </div>
+                                    <div class="selection-item-param">
+                                        <div class="selection-item-title">Комнаты</div>
+                                        <div class="selection-item-value">4</div>
+                                    </div>
+                                    <div class="selection-item-size">
+                                        <div class="selection-item-title">Площадь</div>
+                                        <div class="selection-item-value">140 м<sup>2</sup></div>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- selection item END -->
+
+                            <!-- selection item -->
+                            <a href="#" class="selection-item">
+                                <div class="selection-item-scheme"><img src="files/select-item.svg" alt=""></div>
+                                <div class="selection-item-container">
+                                    <div class="selection-item-build">
+                                        <div class="selection-item-title">Дом</div>
+                                        <div class="selection-item-value">Строение-1</div>
+                                    </div>
+                                    <div class="selection-item-param">
+                                        <div class="selection-item-title">Секция</div>
+                                        <div class="selection-item-value">2</div>
+                                    </div>
+                                    <div class="selection-item-param">
+                                        <div class="selection-item-title">Квартира</div>
+                                        <div class="selection-item-value">6</div>
+                                    </div>
+                                    <div class="selection-item-param">
+                                        <div class="selection-item-title">Комнаты</div>
+                                        <div class="selection-item-value">4</div>
+                                    </div>
+                                    <div class="selection-item-size">
+                                        <div class="selection-item-title">Площадь</div>
+                                        <div class="selection-item-value">140 м<sup>2</sup></div>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- selection item END -->
+
+                            <!-- selection item -->
+                            <a href="#" class="selection-item">
+                                <div class="selection-item-scheme"><img src="files/select-item.svg" alt=""></div>
+                                <div class="selection-item-container">
+                                    <div class="selection-item-build">
+                                        <div class="selection-item-title">Дом</div>
+                                        <div class="selection-item-value">Строение-1</div>
+                                    </div>
+                                    <div class="selection-item-param">
+                                        <div class="selection-item-title">Секция</div>
+                                        <div class="selection-item-value">2</div>
+                                    </div>
+                                    <div class="selection-item-param">
+                                        <div class="selection-item-title">Квартира</div>
+                                        <div class="selection-item-value">6</div>
+                                    </div>
+                                    <div class="selection-item-param">
+                                        <div class="selection-item-title">Комнаты</div>
+                                        <div class="selection-item-value">4</div>
+                                    </div>
+                                    <div class="selection-item-size">
+                                        <div class="selection-item-title">Площадь</div>
+                                        <div class="selection-item-value">140 м<sup>2</sup></div>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- selection item END -->
+
+                            <!-- selection item -->
+                            <a href="#" class="selection-item">
+                                <div class="selection-item-scheme"><img src="files/select-item.svg" alt=""></div>
+                                <div class="selection-item-container">
+                                    <div class="selection-item-build">
+                                        <div class="selection-item-title">Дом</div>
+                                        <div class="selection-item-value">Строение-1</div>
+                                    </div>
+                                    <div class="selection-item-param">
+                                        <div class="selection-item-title">Секция</div>
+                                        <div class="selection-item-value">2</div>
+                                    </div>
+                                    <div class="selection-item-param">
+                                        <div class="selection-item-title">Квартира</div>
+                                        <div class="selection-item-value">6</div>
+                                    </div>
+                                    <div class="selection-item-param">
+                                        <div class="selection-item-title">Комнаты</div>
+                                        <div class="selection-item-value">4</div>
+                                    </div>
+                                    <div class="selection-item-size">
+                                        <div class="selection-item-title">Площадь</div>
+                                        <div class="selection-item-value">140 м<sup>2</sup></div>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- selection item END -->
+
+                            <!-- selection item -->
+                            <a href="#" class="selection-item">
+                                <div class="selection-item-scheme"><img src="files/select-item.svg" alt=""></div>
+                                <div class="selection-item-container">
+                                    <div class="selection-item-build">
+                                        <div class="selection-item-title">Дом</div>
+                                        <div class="selection-item-value">Строение-1</div>
+                                    </div>
+                                    <div class="selection-item-param">
+                                        <div class="selection-item-title">Секция</div>
+                                        <div class="selection-item-value">2</div>
+                                    </div>
+                                    <div class="selection-item-param">
+                                        <div class="selection-item-title">Квартира</div>
+                                        <div class="selection-item-value">6</div>
+                                    </div>
+                                    <div class="selection-item-param">
+                                        <div class="selection-item-title">Комнаты</div>
+                                        <div class="selection-item-value">4</div>
+                                    </div>
+                                    <div class="selection-item-size">
+                                        <div class="selection-item-title">Площадь</div>
+                                        <div class="selection-item-value">140 м<sup>2</sup></div>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- selection item END -->
+
+                            <!-- selection item -->
+                            <a href="#" class="selection-item">
+                                <div class="selection-item-scheme"><img src="files/select-item.svg" alt=""></div>
+                                <div class="selection-item-container">
+                                    <div class="selection-item-build">
+                                        <div class="selection-item-title">Дом</div>
+                                        <div class="selection-item-value">Строение-1</div>
+                                    </div>
+                                    <div class="selection-item-param">
+                                        <div class="selection-item-title">Секция</div>
+                                        <div class="selection-item-value">2</div>
+                                    </div>
+                                    <div class="selection-item-param">
+                                        <div class="selection-item-title">Квартира</div>
+                                        <div class="selection-item-value">6</div>
+                                    </div>
+                                    <div class="selection-item-param">
+                                        <div class="selection-item-title">Комнаты</div>
+                                        <div class="selection-item-value">4</div>
+                                    </div>
+                                    <div class="selection-item-size">
+                                        <div class="selection-item-title">Площадь</div>
+                                        <div class="selection-item-value">140 м<sup>2</sup></div>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- selection item END -->
+
+                            <!-- selection item -->
+                            <a href="#" class="selection-item">
+                                <div class="selection-item-scheme"><img src="files/select-item.svg" alt=""></div>
+                                <div class="selection-item-container">
+                                    <div class="selection-item-build">
+                                        <div class="selection-item-title">Дом</div>
+                                        <div class="selection-item-value">Строение-1</div>
+                                    </div>
+                                    <div class="selection-item-param">
+                                        <div class="selection-item-title">Секция</div>
+                                        <div class="selection-item-value">2</div>
+                                    </div>
+                                    <div class="selection-item-param">
+                                        <div class="selection-item-title">Квартира</div>
+                                        <div class="selection-item-value">6</div>
+                                    </div>
+                                    <div class="selection-item-param">
+                                        <div class="selection-item-title">Комнаты</div>
+                                        <div class="selection-item-value">4</div>
+                                    </div>
+                                    <div class="selection-item-size">
+                                        <div class="selection-item-title">Площадь</div>
+                                        <div class="selection-item-value">140 м<sup>2</sup></div>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- selection item END -->
+
+                        </div>
+                        <!-- selection list END -->
+
+                        <div class="selection-more">
+                            <a href="ajax/selection.html"></a>
+                            <div class="form-loading">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- selection container END -->
+                </div>
+                <!-- selection END -->
+
+            </div>
+
+            <footer>
+                <div class="footer-inner">
+                    <div class="container">
+                        <div class="footer-contacts">
+                            <div class="footer-address"><span>Офис продаж:</span> Космодемьянская, 5</div>
+                            <div class="footer-social">
+                                <div class="footer-social-item"><a href="http://t.me/academy_dom" target="_blank"><svg><use xlink:href="images/sprite.svg#btn-arrow"></use></svg><span>TELEGRAM</span></a></div>
+                                <div class="footer-social-item"><a href="http://vk.com/academy_dom" target="_blank"><svg><use xlink:href="images/sprite.svg#btn-arrow"></use></svg><span>VKONTAKTE</span></a></div>
+                            </div>
+                            <a href="#" class="footer-callback-link">Перезвонить мне<svg><use xlink:href="images/sprite.svg#btn-arrow"></use></svg></a>
+                            <div class="footer-phone"><a href="tel:+78412772727">8 8412 77-27-27</a></div>
+                        </div>
+                        <div class="footer-info">
+                            <div class="footer-info-images">Изображения на фотографиях, рендерах и рисунках, представленные планировки могут отличаться от реального объекта. Вся размещенная информация на данном сайте носит исключительно ознакомительный характер и ни при каких условиях не является публичной офертой, не содержит полного и точного описания характеристик объекта и может быть изменена.</div>
+                            <div class="footer-info-developers">Застройщик: ООО «Специализированный застройщик «РегионСтрой58». Ознакомиться с проектной декларацией вы можете на сайте единой информационной системы жилищного строительства наш.дом.рф.</div>
+                        </div>
+                        <div class="footer-copyrights">
+                            <div class="footer-copyrights-developer">Застройщик:<br> ООО «Специализированный застройщик «РегионСтрой58»</div>
+                            <div class="footer-copyrights-group">Девелопмент:<br> Группа компаний «АВТОР»</div>
+                            <div class="footer-copyrights-7pap">Разработка сайта: <a href="https://7pap.ru" target="_blank">семьпап</a></div>
+                        </div>
+                        <div class="footer-title">
+                            <svg><use xlink:href="images/sprite.svg#title"></use></svg>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+            <div class="page-loading"><svg><use xlink:href="images/sprite.svg#logo"></use></svg></div>
+
+        </div>
+        <!-- wrapper END -->
+
+        <script>
+            var pathTemplate = './';
+        </script>
+
+        <script src="js/svg4everybody.min.js"></script>
+        <script>svg4everybody();</script>
+
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/slick/slick.min.js"></script>
+        <script src="js/jquery.mask.min.js"></script>
+        <script src="js/validation/jquery.validate.min.js"></script>
+        <script src="js/validation/messages_ru.js"></script>
+        <script src="js/jquery.cookie.js"></script>
+        <script src="js/tools.js"></script>
+
+    </body>
+</html>
