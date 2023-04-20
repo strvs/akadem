@@ -117,10 +117,19 @@ $(document).ready(function() {
         $(this).parent().toggleClass('open');
     });
 
+    $('.selection-filter-build input').change(function() {
+        updateFilterSizesList();
+    });
+
+    $('.selection-filter-rooms input').change(function() {
+        updateFilterSizesList();
+    });
+
     $('.selection-filter-size input').change(function() {
         updateFilterSize();
     });
 
+    updateFilterSizesList();
     updateFilterSize();
 
     $('.selection-filter-reset button').click(function(e) {
@@ -615,14 +624,41 @@ function windowClose() {
     }
 }
 
+function updateFilterSizesList() {
+    $('.selection-filter-size').each(function() {
+        $('.selection-filter-size label.visible').removeClass('visible');
+        var listBuilds = $('.selection-filter-build input:checked');
+        if (listBuilds.length == 0) {
+            listBuilds = $('.selection-filter-build input');
+        }
+        listBuilds.each(function() {
+            var curBuild = $(this).attr('value');
+            var listRooms = $('.selection-filter-rooms input:checked');
+            if (listRooms.length == 0) {
+                listRooms = $('.selection-filter-rooms input');
+            }
+            listRooms.each(function() {
+                var curRooms = $(this).attr('value');
+                $('.selection-filter-size label').each(function() {
+                    var curSize = $(this);
+                    if (curSize.attr('data-build') == curBuild && curSize.attr('data-rooms') == curRooms) {
+                        curSize.addClass('visible');
+                    }
+                });
+            });
+        });
+        updateFilterSize();
+    });
+}
+
 function updateFilterSize() {
     $('.selection-filter-size').each(function() {
-        if ($('.selection-filter-size input:checked').length > 0) {
-            $('.selection-filter-size-text-from').html($('.selection-filter-size input:checked').eq(0).parent().find('span').html());
-            $('.selection-filter-size-text-to').html($('.selection-filter-size input:checked').last().parent().find('span').html());
+        if ($('.selection-filter-size label.visible input:checked').length > 0) {
+            $('.selection-filter-size-text-from').html($('.selection-filter-size label.visible input:checked').eq(0).parent().find('span').html());
+            $('.selection-filter-size-text-to').html($('.selection-filter-size label.visible input:checked').last().parent().find('span').html());
         } else {
-            $('.selection-filter-size-text-from').html($('.selection-filter-size input').eq(0).parent().find('span').html());
-            $('.selection-filter-size-text-to').html($('.selection-filter-size input').last().parent().find('span').html());
+            $('.selection-filter-size-text-from').html($('.selection-filter-size label.visible input').eq(0).parent().find('span').html());
+            $('.selection-filter-size-text-to').html($('.selection-filter-size label.visible input').last().parent().find('span').html());
         }
     });
 }

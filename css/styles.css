@@ -692,7 +692,8 @@ a.main-peoples-item-inner:hover span {opacity:1}
 .selection-filter-rooms label:hover span {background:#C9B08A}
 .selection-filter-rooms label input:checked+span {background:#272817; color:#FFFFFF}
 .selection-filter-size {margin:0 0 0 -15px; display:flex; flex-wrap:wrap; font-weight:normal; font-size:16px; line-height:20px; text-align:center}
-.selection-filter-size label {display:block; width:calc(25% - 15px); cursor:pointer; margin:0 0 15px 15px}
+.selection-filter-size label {display:none; width:calc(25% - 15px); cursor:pointer; margin:0 0 15px 15px}
+.selection-filter-size label.visible {display:block}
 .selection-filter-size label input {display:none}
 .selection-filter-size label span {display:flex; width:100%; height:55px; background:#F7F3E8; color:#272817; transition:background 0.2s, color 0.2s; justify-content:center; align-items:center; border-radius:16px}
 .selection-filter-size label:hover span {background:#C9B08A}
