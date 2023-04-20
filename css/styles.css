@@ -286,8 +286,10 @@ header.invert .header-select-link svg {stroke:#FFFFFF}
 .main-prefs-item-img-inner span {position:absolute; left:2.08vw; right:2.08vw; bottom:2.08vw; font-size:1.14vw; line-height:1.09em; font-weight:bold; color:#FFFFFF; text-transform:uppercase; letter-spacing:0}
 .main-prefs-list .slick-prev,
 .main-prefs-list .slick-next {display:block; position:absolute; z-index:2; bottom:-40px; color:#272817; width:auto; height:auto; border:none; border-radius:0; margin:0; padding:0; font:normal 16px/20px Gerbera, sans-serif; outline:none; -webkit-appearance:none; cursor:pointer; background:transparent; transition:color 0.2s}
-.main-prefs-list .slick-prev {right:100px}
+.main-prefs-list .slick-prev {right:0}
 .main-prefs-list .slick-next {right:0}
+.main-prefs-list .slick-prev.slick-disabled {display:none !important}
+.main-prefs-list .slick-next.slick-disabled {display:none !important}
 .main-prefs-list .slick-prev:hover,
 .main-prefs-list .slick-next:hover {color:#C9B08A}
 .main-prefs-list .slick-prev svg {display:inline-block; vertical-align:middle; width:16px; height:8px; margin:2px 10px 0 0; stroke:#272817; fill:none; transition:stroke 0.2s; transform:scale(-1, 1)}
@@ -512,9 +514,21 @@ header.invert .header-select-link svg {stroke:#FFFFFF}
 .main-peoples-item {display:inline-block; vertical-align:top; width:31.4vw; white-space:normal}
 .main-peoples-item-inner {display:block; position:relative; overflow:hidden}
 .main-peoples-item-inner img {display:block; width:100%; transition:filter 0.2s}
-.main-peoples-item-inner:hover img {filter:blur(3.7px)}
+a.main-peoples-item-inner:hover img {filter:blur(3.7px)}
 .main-peoples-item-inner span {display:flex; position:absolute; left:50%; top:50%; width:10.41vw; height:10.41vw; padding:20px; border-radius:50%; transform:translate(-50%, -50%); background:rgba(201, 176, 138, 0.8); text-align:center; align-items:center; color:#F7F3E8; font-weight:normal; font-size:16px; line-height:20px; letter-spacing:0; opacity:0; transition:opacity 0.2s}
-.main-peoples-item-inner:hover span {opacity:1}
+a.main-peoples-item-inner:hover span {opacity:1}
+.main-peoples-list .slick-prev,
+.main-peoples-list .slick-next {display:block; position:absolute; z-index:2; bottom:-40px; color:#272817; width:auto; height:auto; border:none; border-radius:0; margin:0; padding:0; font:normal 16px/20px Gerbera, sans-serif; outline:none; -webkit-appearance:none; cursor:pointer; background:transparent; transition:color 0.2s}
+.main-peoples-list .slick-prev {right:150px}
+.main-peoples-list .slick-next {right:0}
+.main-peoples-list .slick-prev.slick-disabled {display:none !important}
+.main-peoples-list .slick-next.slick-disabled {display:none !important}
+.main-peoples-list .slick-prev:hover,
+.main-peoples-list .slick-next:hover {color:#C9B08A}
+.main-peoples-list .slick-prev svg {display:inline-block; vertical-align:middle; width:16px; height:8px; margin:2px 10px 0 0; stroke:#272817; fill:none; transition:stroke 0.2s; transform:scale(-1, 1)}
+.main-peoples-list .slick-next svg {display:inline-block; vertical-align:middle; width:16px; height:8px; margin:2px 0 0 10px; stroke:#272817; fill:none; transition:stroke 0.2s}
+.main-peoples-list .slick-prev:hover svg {stroke:#C9B08A}
+.main-peoples-list .slick-next:hover svg {stroke:#C9B08A}
 
 @media (max-width:1023px) {
     .main-peoples {padding:100px 0 0 0}
@@ -839,9 +853,9 @@ header.invert .header-select-link svg {stroke:#FFFFFF}
 .detail-preview-special-mobile {display:none}
 .detail-preview-scheme {margin:10px auto 0 auto; width:28.85vw; position:relative}
 .detail-preview-scheme a {display:block; position:relative; width:100%; transition:opacity 0.2s}
-.detail-preview-scheme a+a {position:absolute; left:0; top:0; opacity:0}
-.detail-preview.view-furniture .detail-preview-scheme a {opacity:0}
-.detail-preview.view-furniture .detail-preview-scheme a+a {opacity:1}
+.detail-preview-scheme a+a {position:absolute; left:0; top:0; opacity:0; visibility:hidden}
+.detail-preview.view-furniture .detail-preview-scheme a {opacity:0; visibility:hidden}
+.detail-preview.view-furniture .detail-preview-scheme a+a {opacity:1; visibility:visible}
 .detail-preview-scheme img {display:block; width:100%}
 .detail-bottom-mobile {display:none}
 
@@ -869,8 +883,8 @@ header.invert .header-select-link svg {stroke:#FFFFFF}
 .detail-place-build-title {font-weight:normal; font-size:16px; line-height:20px; color:#A5A5A5}
 .detail-place-build-value {margin:15px 0 0 0; font-weight:bold; line-height:24px}
 .detail-place .detail-group+.detail-group {margin:35px 0 0 0}
-.detail-place-floor {margin:25px 0 0 0; line-height:0}
-.detail-place-floor img {display:block; width:100%}
+.detail-place-floor {margin:25px 0 0 0; line-height:0; max-width:180px}
+.detail-place-floor img {display:block; max-width:100%}
 
 @media (max-width:1599px) {
     .detail-place {width:300px; min-width:300px}
@@ -1277,6 +1291,18 @@ header.invert .header-select-link svg {stroke:#FFFFFF}
 .idea-carousel-item-inner {width:400px; margin:0 10px 0 0}
 .idea-carousel-item-photo img {display:block; width:100%}
 .idea-carousel-item-title {margin:50px 0 0 0; font-weight:bold; font-size:22px; line-height:26px; letter-spacing:0; text-transform:uppercase}
+.idea-carousel .slick-prev,
+.idea-carousel .slick-next {display:block; position:absolute; z-index:2; bottom:-40px; color:#272817; width:auto; height:auto; border:none; border-radius:0; margin:0; padding:0; font:normal 16px/20px Gerbera, sans-serif; outline:none; -webkit-appearance:none; cursor:pointer; background:transparent; transition:color 0.2s}
+.idea-carousel .slick-prev {right:150px}
+.idea-carousel .slick-next {right:0}
+.idea-carousel .slick-prev.slick-disabled {display:none !important}
+.idea-carousel .slick-next.slick-disabled {display:none !important}
+.idea-carousel .slick-prev:hover,
+.idea-carousel .slick-next:hover {color:#C9B08A}
+.idea-carousel .slick-prev svg {display:inline-block; vertical-align:middle; width:16px; height:8px; margin:2px 10px 0 0; stroke:#272817; fill:none; transition:stroke 0.2s; transform:scale(-1, 1)}
+.idea-carousel .slick-next svg {display:inline-block; vertical-align:middle; width:16px; height:8px; margin:2px 0 0 10px; stroke:#272817; fill:none; transition:stroke 0.2s}
+.idea-carousel .slick-prev:hover svg {stroke:#C9B08A}
+.idea-carousel .slick-next:hover svg {stroke:#C9B08A}
 
 @media (max-width:1023px) {
     .idea-carousel {margin:40px 0 0 0}

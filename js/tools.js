@@ -43,13 +43,15 @@ $(document).ready(function() {
         variableWidth: true,
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrows: false,
+        prevArrow: '<button type="button" class="slick-prev"><svg><use xlink:href="' + pathTemplate + 'images/sprite.svg#btn-arrow"></use></svg>Листай</button>',
+        nextArrow: '<button type="button" class="slick-next">Листай<svg><use xlink:href="' + pathTemplate + 'images/sprite.svg#btn-arrow"></use></svg></button>',
         dots: false,
         responsive: [
             {
                 breakpoint: 1023,
                 settings: {
-                    variableWidth: false
+                    variableWidth: false,
+                    arrows: false
                 }
             }
         ]
@@ -219,6 +221,7 @@ $(document).ready(function() {
     });
 
     $('[data-fancybox]').fancybox({
+        hideScrollbar: false,
         buttons : [
             'close'
         ],
@@ -235,8 +238,17 @@ $(document).ready(function() {
         variableWidth: true,
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrows: false,
-        dots: false
+        prevArrow: '<button type="button" class="slick-prev"><svg><use xlink:href="' + pathTemplate + 'images/sprite.svg#btn-arrow"></use></svg>Листай</button>',
+        nextArrow: '<button type="button" class="slick-next">Листай<svg><use xlink:href="' + pathTemplate + 'images/sprite.svg#btn-arrow"></use></svg></button>',
+        dots: false,
+        responsive: [
+            {
+                breakpoint: 1023,
+                settings: {
+                    arrows: false
+                }
+            }
+        ]
     });
 
     if ($('.detail').length == 1) {
