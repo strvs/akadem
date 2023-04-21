@@ -1114,7 +1114,7 @@ a.main-peoples-item-inner:hover span {opacity:1}
     .business-link.before-footer {position:absolute}
     .business-link a {display:block; padding:16px 0; font-size:14px; background:#272817; border-radius:22px; color:#FFFFFF; text-align:center}
     .business-link a svg {stroke:#FFFFFF}
-    .business-download {margin:50px 0 40px 0; min-width:0; width:auto}
+    .business-download {margin:50px 0 0 0; padding:0 0 40px 0; min-width:0; width:auto}
     .business-download-inner {margin-top:0 !important}
     .business-download.fixed .business-download-inner {top:auto; position:relative}
 }
