@@ -641,7 +641,7 @@ function updateFilterSizesList() {
                 var curRooms = $(this).attr('value');
                 $('.selection-filter-size label').each(function() {
                     var curSize = $(this);
-                    if (curSize.attr('data-build') == curBuild && curSize.attr('data-rooms') == curRooms) {
+                    if (curSize.attr('data-build').split(',').indexOf(curBuild) != -1 && curSize.attr('data-rooms').split(',').indexOf(curRooms) != -1) {
                         curSize.addClass('visible');
                     }
                 });
