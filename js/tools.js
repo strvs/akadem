@@ -141,6 +141,7 @@ $(document).ready(function() {
             var curChecked = curInput.prop('checked');
             $.cookie('filter_checkbox_' + curIndex, curChecked, {expires: 365});
         });
+        updateFilterSizesList();
         updateFilterSize();
         updateCatalogue();
         e.preventDefault();
@@ -224,6 +225,7 @@ $(document).ready(function() {
             }
         });
 
+        updateFilterSizesList();
         updateFilterSize();
 
         updateCatalogue();
